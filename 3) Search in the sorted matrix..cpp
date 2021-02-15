@@ -25,7 +25,7 @@ void find1(vector<vector<int>> &v,int n)
 	{
 		cout<<-1;
 	}
-	while(v[r][c]!=n && r>=0 && c>=0)
+	while(v[r][c]!=n)
 	{
 		//cout<<v[r][c]<<" "<<r<<" "<<c<<endl;
 		if(v[r][c]>n)
@@ -35,6 +35,16 @@ void find1(vector<vector<int>> &v,int n)
 		else
 		{
 			r++;
+		}
+		if(r>= v.size())
+		{
+			r--;
+			break;
+		}
+		if(c<0)
+		{
+			c++;
+			break;
 		}
 		//cout<<c<<" "<<r<<endl;
 	}
@@ -50,7 +60,7 @@ int main()
                       { 15, 25, 35, 45 },
                       { 27, 29, 37, 48 },
                       { 32, 33, 39, 50 } };
-	find1(v,6);
+	find1(v,33);
 
 return 0;
 }
