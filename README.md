@@ -1,2 +1,3 @@
-# CP_CipherSchools
-CP Assignments
+# CP CipherSchools
+- CP Assignments.
+- DSA questions and solutions.
